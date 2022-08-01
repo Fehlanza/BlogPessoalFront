@@ -8,7 +8,7 @@ import { Box } from '@mui/material'
 function Navbar() {
     return (
         <>
-            <AppBar position="static">
+            <AppBar position="static" color='secondary'>
                 <Toolbar variant="dense">
                     <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
