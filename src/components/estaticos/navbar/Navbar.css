@@ -4,7 +4,10 @@
 
 }
 
-
 .text-decorator-none{
     text-decoration: none;
+}
+
+.background{
+    background-color: #ca6c9e;
 }

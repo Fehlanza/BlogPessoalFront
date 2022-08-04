@@ -9,7 +9,7 @@ function Navbar() {
     return (
         <>
             <AppBar position="static" color='secondary'>
-                <Toolbar variant="dense">
+                <Toolbar className="background" variant="dense">
                     <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
                             BlogPessoal
