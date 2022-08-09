@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
-
 import './App.css';
 import ListaTema from './components/temas/listatema/ListaTema';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
@@ -13,11 +12,14 @@ import ListaPostagem from './components/temas/postagens/listapostagem/ListaPosta
 import CadastroPost from './components/temas/postagens/cadastroPost/CadastroPost';
 import DeletarPostagem from './components/temas/postagens/deletarPostagem/DeletarPostagem';
 import Login from './Paginas/login/Login';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 
 function App() {
   return (
-    <Router>
+    <Provider store={store}>
+      <Router>
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
         <Routes>
@@ -52,6 +54,7 @@ function App() {
       <Footer />
 
     </Router>
+    </Provider>
   );
 }
 
